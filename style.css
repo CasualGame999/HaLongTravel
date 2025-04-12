@@ -1,0 +1,307 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Di chuột vào đổi màu ở menu trang chủ */
+.menu a:hover {
+  color: #ffb75f;
+}
+
+i {
+  font-size: 20px;
+  line-height: 2;
+}
+
+header {
+  background: #009247;
+  display: flex;
+  color: #fff;
+  justify-content: space-around; /* Dàn đều thanh menu*/
+  align-items: center; /* Căn giữa theo chiều dọc*/
+  padding: 20px 0;
+  position: fixed; /* Cố định luôn ở trên cùng */
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo img {
+  width: 150px;
+  height: 70px;
+  object-fit: cover; /* Tự động đổi kích thước ảnh */
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bg {
+  width: 100%;
+  padding-top: 50px;
+}
+.bg img {
+  width: 100%;
+  height: 630px;
+  object-fit: cover;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.title h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+.title h2 {
+  font-size: 25px;
+  margin: 10px 0;
+}
+.btn {
+  margin-top: 50px;
+  color: #fff;
+  border-color: #32aa27;
+  background-color: #32aa27;
+  padding: 15px 30px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+a.btn {
+  text-decoration: none;
+}
+#gioithieu {
+  display: flex;
+  padding: 50px 200px;
+  align-content: center;
+  justify-content: space-between;
+  text-align: justify;
+}
+#gioithieu .left {
+  width: 50%;
+}
+#gioithieu .right {
+  width: 50%;
+  margin-left: 100px;
+}
+#gioithieu .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dichvu {
+  padding: 50px 200px;
+  background-color: rgba(128, 128, 128, 0.138);
+}
+.dichvu .tour-title p {
+  color: #32aa27;
+  font-size: 16px;
+}
+.dichvu .tour-title h2 {
+  font-size: 24px;
+}
+
+.grid-tour {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 2%;
+}
+
+.grid-tour a {
+  text-decoration: none;
+  color: #000;
+}
+.tour {
+  border: 1px solid gray;
+  transition: 0.15s all linear;
+}
+.tour img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.tour .content {
+  width: 300px;
+  padding: 0 5px;
+  height: 170px;
+}
+.tour .content b {
+  color: red;
+  font-size: 13px;
+}
+.tour:hover {
+  transform: translateY(-10px);
+  transition: 0.3s all linear;
+  cursor: pointer;
+}
+#topdiemdulich {
+  padding: 50px 200px;
+  height: 450px;
+}
+#topdiemdulich .grid-img {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 10px;
+  height: 300px;
+}
+.item img {
+  width: 100%;
+  height: 100px;
+}
+.item .anh {
+  height: 310px;
+}
+.item .tren {
+  display: flex;
+  margin-bottom: 10px;
+  height: 150px;
+  gap: 10px;
+}
+.item .tren img {
+  height: 100%;
+  width: 48.5%;
+}
+.item .duoi img {
+  height: 150px;
+}
+.item .anh1,
+.item .anh2 {
+  height: 150px;
+  width: 100%;
+}
+.item .anh1 {
+  margin-bottom: 5px;
+}
+#lienhe {
+  padding: 30px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.138);
+}
+#lienhe .left p {
+  color: #32aa27;
+}
+.left form {
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+form span {
+  color: red;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+form textarea {
+  height: 100px;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #000;
+  outline: none;
+}
+
+form button {
+  background-color: #32aa27;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+}
+
+form button:hover {
+  background-color: #009247;
+}
+footer {
+  background: #1a3863;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 1%;
+  line-height: 1.5;
+  padding: 50px 200px;
+  height: 300px;
+}
+footer .info {
+  margin: 0 auto;
+}
+.info img {
+  width: 150px;
+  height: 70px;
+  object-fit: cover;
+}
+footer ul li {
+  list-style: none;
+}
+
+.email .social i {
+  padding: 0 5px;
+}
+.email p {
+  font-style: italic;
+  font-size: 14px;
+}
+.email input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.thongtin {
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thongtin a,
+.info a, .email a {
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.thongtin a:hover,
+.info a:hover {
+  color: #3fb832;
+}
